@@ -1,0 +1,53 @@
+'scopeName': 'text.wiki'
+'name': 'itwonders wiki'
+'fileTypes': ['wiki']
+
+'foldingStartMarker' : '\\[ --- start ---- \\]$'
+'foldingStopMarker' : '\\[ --- end ---- \\]$'
+
+'patterns': [
+    {
+        'match': '\\b(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))\\b'
+        'name': 'constant.numeric.wiki'
+    }
+    {
+        'match': '".*"'
+        'name': 'constant.string.wiki'
+    }
+    {
+        'match': '^@@ .*:'
+        'name': 'filepath.wiki'
+    }
+    {
+        'match': '\\[\\[.*?]]'
+        'name': 'string.other.link.wiki'
+    }
+    {
+        'match': '^=== (\\[.*\\]) ===$'
+        'captures':
+            '1':
+                'name': '.topic-title.wiki'
+        'name': '.topic-decoration.wiki'
+    }
+    {
+        'match': '\\W(_.+?_)\\W'
+        'name': 'markup.italic.wiki'
+    }
+    {
+        'match': '`.*`'
+        'name': 'string.quoted.single.wiki'
+    }
+    {
+        'match': '\\[ --- start ---- \\]'
+        'name': 'comment.wiki'
+    }
+    {
+        'match': '\\[ ---  end  ---- \\]'
+        'name': 'comment.wiki'
+    }
+    {
+        'begin': '^{{{'
+        'end': '^}}}'
+        'name': 'string.quoted.single.wiki'
+    }
+]

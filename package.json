@@ -1,0 +1,17 @@
+{
+  "name": "language-itwonders-wiki",
+  "version": "1.0.0",
+  "description": "vimwiki syntax used by IT Wonders, reference based on Dessyreqt/awiki",
+  "engines": {
+    "atom": "*"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kenng/itwonders-atom-vimwiki.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kenng/itwonders-atom-vimwiki/issues"
+  },
+  "license": "MIT"
+}
