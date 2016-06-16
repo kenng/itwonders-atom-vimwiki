@@ -15,8 +15,12 @@
         'name': 'constant.string.wiki'
     }
     {
-        'match': '^@@ [^:]*'
+        'match': '^@@ [^:]*:'
         'name': 'filepath.wiki'
+    }
+    {
+        'match': '^@@ [^@]* @@'
+        'name': 'subtitle.wiki'
     }
     {
         'match': '\\[\\[.*?]]'
@@ -39,11 +43,11 @@
     }
     {
         'match': '\\[ --- start ---- \\]'
-        'name': 'comment.wiki'
+        'name': 'subtlegray.wiki'
     }
     {
         'match': '\\[ ---  end  ---- \\]'
-        'name': 'comment.wiki'
+        'name': 'subtlegray.wiki'
     }
     {
         'begin': '^{{{'
