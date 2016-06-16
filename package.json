@@ -1,7 +1,7 @@
 {
   "name": "language-itwonders-wiki",
   "version": "1.0.0",
-  "description": "vimwiki syntax used by IT Wonders, reference based on Dessyreqt/awiki",
+  "description": "wiki syntax and helper function, reference based on Dessyreqt/awiki",
   "engines": {
     "atom": "*"
   },
@@ -13,5 +13,8 @@
   "bugs": {
     "url": "https://github.com/kenng/itwonders-atom-vimwiki/issues"
   },
+  "homepage": "https://github.com/kenng/itwonders-atom-vimwiki#readme",
+  "readme": "Wiki Syntax and Helper Snippet",
+  "readmeFilename": "README.md",
   "license": "MIT"
 }

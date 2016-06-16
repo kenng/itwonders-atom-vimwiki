@@ -1,0 +1,87 @@
+'.text.wiki':
+  'create single topic':
+    'prefix': 'iwt'
+    'body': """
+=== [ topic ][ ${1:topic} ] ===
+[ --- start ---- ]
+$2
+[ ---  end  ---- ]
+    """
+
+  'create two topics':
+    'prefix': 'iwtt'
+    'body': """
+=== [ topic ][ ${1:topic} ][ ${2:topic} ] ===
+[ --- start ---- ]
+$3
+[ ---  end  ---- ]
+    """
+
+  'create three topics':
+    'prefix': 'iwttt'
+    'body': """
+=== [ topic ][ ${1:topic} ][ ${2:topic} ][ ${3:topic} ] ===
+[ --- start ---- ]
+$0
+[ ---  end  ---- ]
+    """
+
+  'add code general':
+    'prefix': 'code'
+    'body': """
+{{{class="prettyprint $1"
+$0
+}}}
+"""
+
+  'add code go':
+    'prefix': 'codeg'
+    'body': """
+{{{class="prettyprint go"
+$0
+}}}
+"""
+
+  'add code javascript':
+    'prefix': 'codej'
+    'body': """
+{{{class="prettyprint js"
+$0
+}}}
+"""
+
+  'add code html':
+    'prefix': 'codeh'
+    'body': """
+{{{class="prettyprint html"
+$0
+}}}
+"""
+
+  'add Example':
+    'prefix': 'ex'
+    'body': """
+Example:
+$0
+"""
+
+  'add Note':
+    'prefix': 'note'
+    'body': """
+Note:
+$0
+"""
+
+  'add Output':
+    'prefix': 'out'
+    'body': """
+Output:
+$0
+"""
+
+  'add Syntax':
+    'prefix': 'syn'
+    'body': """
+Syntax:
+`$0`
+"""

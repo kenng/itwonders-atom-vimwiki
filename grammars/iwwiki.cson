@@ -11,11 +11,11 @@
         'name': 'constant.numeric.wiki'
     }
     {
-        'match': '".*"'
+        'match': '"[^"]*"'
         'name': 'constant.string.wiki'
     }
     {
-        'match': '^@@ .*:'
+        'match': '^@@ [^:]*'
         'name': 'filepath.wiki'
     }
     {
@@ -34,7 +34,7 @@
         'name': 'markup.italic.wiki'
     }
     {
-        'match': '`.*`'
+        'match': '`[^`]*'
         'name': 'string.quoted.single.wiki'
     }
     {
@@ -49,5 +49,21 @@
         'begin': '^{{{'
         'end': '^}}}'
         'name': 'string.quoted.single.wiki'
+    }
+    {
+        'match': '^Example:'
+        'name': 'example.wiki'
+    }
+    {
+        'match': '^Output:'
+        'name': 'output.wiki'
+    }
+    {
+        'match': '^Syntax:'
+        'name': 'syntax.wiki'
+    }
+    {
+        'match': '^Note:'
+        'name': 'note.wiki'
     }
 ]

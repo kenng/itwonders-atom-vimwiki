@@ -1,0 +1,16 @@
+'.text.wiki':
+  'editor':
+    'completions': [
+
+      # Snippets
+      'iwt'
+      'iwtt'
+      'iwttt'
+      'code'
+      'codej'
+      'codeh'
+      'codeg'
+      'ex'
+      'out'
+      'syn'
+    ]
